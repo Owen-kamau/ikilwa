@@ -1,0 +1,19 @@
+# Git Workflow for Task App Project
+
+# Initialize repository
+git init
+
+# Add all files
+git add .
+
+# Commit changes
+git commit -m "Initial commit - Task App assignment"
+
+# Set default branch
+git branch -M main
+
+# Link remote GitHub repository
+git remote add origin https://github.com/username/task_app.git
+
+# Push project to GitHub
+git push -u origin main

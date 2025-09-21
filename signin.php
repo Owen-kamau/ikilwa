@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task App - Signup</title>
+    <title>Task App - Sign In</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@
             margin: 40px;
         }
         .container {
-            max-width: 500px;
+            max-width: 400px;
             margin: auto;
             background: #fff;
             padding: 30px;
@@ -26,7 +26,7 @@
             display: block;
             margin-top: 15px;
         }
-        input, select, button {
+        input, button {
             width: 100%;
             padding: 10px;
             margin-top: 8px;
@@ -44,53 +44,37 @@
         button:hover {
             background: #005a9e;
         }
-          .signin-link {
+        .signup-link {
             text-align: center;
             margin-top: 20px;
             font-size: 14px;
         }
-        .signin-link a {
+        .signup-link a {
             color: #0078D7;
             text-decoration: none;
             font-weight: bold;
         }
-        .signin-link a:hover {
+        .signup-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Signup Form 🚀</h2>
-        <form action="mail.php" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-
+        <h2>Sign In 🔑</h2>
+        <form action="login.php" method="POST">
             <label for="email">Email Address:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
-            <label for="car_color">Favorite Car Color:</label>
-            <select name="car_color" id="car_color" required>
-                <option value="">-- Select --</option>
-                <option value="Red">Red ❤️</option>
-                <option value="Blue">Blue 💙</option>
-                <option value="Black">Black 🖤</option>
-                <option value="Grey">Grey 🩶</option>
-                <option value="White">White 🤍</option>
-                <option value="Silver">Silver ✨</option>
-                <option value="Green">Green 💚</option>
-                <option value="Yellow">Yellow 💛</option>
-                <option value="Orange">Orange 🧡</option>
-                <option value="Purple">Purple 💜</option>
-                <option value="Custom Wrap">Custom Wrap 🎨</option>
-            </select>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
 
-            <button type="submit">Signup</button>
+            <button type="submit">Sign In</button>
         </form>
 
-         <!-- Sign-in Option -->
-        <div class="signin-link">
-            Already have an account? <a href="signin.php">Sign in here</a>
+        <!-- Signup Option -->
+        <div class="signup-link">
+            Don’t have an account? <a href="index.html">Sign up here</a>
         </div>
     </div>
 </body>
